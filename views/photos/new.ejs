@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<%- include('../partials/head.ejs') %>
+  <body>
+    <%- include('../partials/header.ejs') %>
+    <h1></h1>
+    <h2></h2>
+    <hr>
+    <form action="/photos" method="POST">
+      Name: <br/><input type="text" name="name"><br/>
+      Description: <br/><textarea name="description"></textarea><br/>
+      Image: <br/><input type="text" name="img" placeholder="ex. https://YourImageAddressHere.jpg"><br/>
+      Price: <br/><input class="number" type="number" name="price"><br/>
+      Quantity:<br/><input class="number" type="number" name="qty"><br/>
+      <input type="submit" value="Create Photo">
+    </form>
+  </body>
+</html>

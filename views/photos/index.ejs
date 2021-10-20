@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<%- include('../partials/head.ejs') %>
+  <body>
+    <!-- <h1 class="main-page">Bugs-R-Us</h1> -->
+    <%- include('../partials/header.ejs') %>
+    <div>
+      <% for (var i = 0; i < photo.length; i++) { %>
+        <div>
+            <% if (photo[i].img === ""){ %>
+              <a href="/photos/<%=photo[i].id %>">
+              <img src='https://eagle-sensors.com/wp-content/uploads/unavailable-image.jpg' alt="<%=photo[i].name%>">
+              <h4 class="name-price"><%=photo[i].name%><span>$<%=photo[i].price%></span></h4>
+              </a>
+            <% } else { %>
+              <a href="/photos/<%=photo[i].id %>">
+              <img src="<%=photo[i].img%>" alt="<%=photo[i].name%>">
+              <h4><%=photo[i].name%><span>$<%=photo[i].price%></span></h4>
+              </a>
+            <% } %>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>

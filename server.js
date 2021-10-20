@@ -44,8 +44,7 @@ app.use('/photos', storeController)
 
 // Routes
 app.get('/', (req, res) => {
-    res.redirect('/photography'
-  )
+    res.redirect('/photos')
 })
 
 //Listener
