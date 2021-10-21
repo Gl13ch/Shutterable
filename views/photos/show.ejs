@@ -3,12 +3,12 @@
 <%- include('../partials/head.ejs') %>
   <body>
     <%- include('../partials/header.ejs') %>
-      <div>
-        <div>
-          <img src="<%=photos.img%>" alt="<%=photos.name%>">
+      <div class="show-container">
+        <div class="show-img-container">
+          <img class="show-img" src="<%=photos.img%>" alt="<%=photos.photographer%>">
         </div>
-        <div>
-          <h2><%=photos.name%></h2>
+        <div class="show-info">
+          <h2><%=photos.photographer%></h2>
           <h4>Price: $<%=photos.price%></h4>
           <h4><%=photos.description %></h4>
           <h4>Qty: <%=photos.qty%></h4>

@@ -1,7 +1,17 @@
+//Dependencies
 const express = require('express')
 const seed = require('../models/photoSeed.js')
 const Photo = require('../models/photos.js')
 const photos = express.Router()
+
+//Blocks users from pages when not logged in
+const isAuthenticated = (req, res, next) => {
+  if(req.session.currentUser){
+    return next()
+  } else {
+    res.redirect('/sessions/new')
+  }
+}
 
 //update Route
 photos.put('/:id', (req, res) => {
@@ -20,8 +30,9 @@ photos.delete('/:id', (req,res) => {
 //New Route
 photos.get('/new', (req, res) => {
   res.render(
-    'photos/new.ejs'
-    )
+    'photos/new.ejs',
+    {currentUser: req.session.currentUser}
+  )
 })
 
 // Create Route
@@ -35,7 +46,8 @@ photos.post('/', (req, res)=>{
 photos.get('/', (req, res) => {
   Photo.find({}, (error, allPhotos) => {
     res.render('photos/index.ejs', {
-      photo: allPhotos
+      photo: allPhotos,
+      currentUser: req.session.currentUser
     })
   })
 })
@@ -53,7 +65,8 @@ photos.get('/seed', (req,res) => {
 photos.get('/:id', (req, res) => {
   Photo.findById(req.params.id, (err, foundPhoto) => {
     res.render('photos/show.ejs', {
-      photos: foundPhoto
+    photos: foundPhoto,
+    currentUser: req.session.currentUser
     })
   })
 })
@@ -65,6 +78,7 @@ photos.get('/:id/edit', (req, res) => {
       'photos/edit.ejs',
       {
         photo: foundPhoto,
+        currentUser: req.session.currentUser
       }
     )
   })

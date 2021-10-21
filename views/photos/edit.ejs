@@ -7,7 +7,7 @@
      <body>
          <h1>Edit</h1>
         <form action="/photos/<%=photo.id%>?_method=PUT" method="POST">
-          Name of your bug: <br/><input type="text" name="name" value="<%=photo.name%>"><br/>
+          Name: <br/><input type="text" name="name" value="<%=photo.name%>"><br/>
           Description: <br/><textarea name="description"></textarea><br/>
           Image: <br/><input type="text" name="img" placeholder="ex. https://YourImageAddressHere.jpg" value="<%=photo.img%>"><br/>
           Price: <br/><input class="number" type="number" name="price" value="<%=photo.price%>"><br/>

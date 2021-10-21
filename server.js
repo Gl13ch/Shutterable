@@ -25,21 +25,21 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
-// app.use(
-//   session({
-//     secret: process.env.SECRET,
-//     resave: false,
-//     saveUninitialized: false
-//   })
-// )
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false
+  })
+)
 // app.use(express.json());
 
 //controllers
 const storeController = require('./controllers/photos_controller.js')
-// const userController = require('./controllers/users_controller.js')
-// const sessionsController = require('./controllers/sessions_controller.js')
-// app.use('/sessions', sessionsController)
-// app.use('/users', userController)
+const userController = require('./controllers/users_controller.js')
+const sessionsController = require('./controllers/sessions_controller.js')
+app.use('/sessions', sessionsController)
+app.use('/users', userController)
 app.use('/photos', storeController)
 
 // Routes

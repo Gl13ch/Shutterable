@@ -1,8 +1,150 @@
-* {
-  background: lightblue;
+*{
+  font-family: 'Poppins', 'sans-serif';
+  margin: 0;
+  padding: 0;
 }
 
-img {
+/* Header */
+.header-container{
+  background: black;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.header-links a{
+  text-decoration: none;
+  color: white;
+}
+
+.header-links #left{
+  float:left;
+}
+
+.header-links #right{
+  float: right;
+}
+
+#header-home{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+#header-sell{
+  font-weight: normal;
+  font-size: 18px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 10px;
+}
+
+#header-signup{
+  font-weight: normal;
+  font-size: 18px;
+  border-right: 1px solid white;
+  padding: 10px;
+}
+
+#header-login{
+  font-weight: normal;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#header-logout{
+  display: inline-block;
+}
+
+/* Index */
+.index-body{
+  background: linear-gradient(#d7d7d9,#b9b9b9);
+}
+
+.index-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+a img{
   height: 300px;
   width: 400px;
+  vertical-align: top;
+  position: relative;
+}
+
+.index-wrap{
+  position: relative;
+  text-align: center;
+}
+
+.index-des{
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  visibility: hidden;
+  background-color: rgba(0,0,0, 0.6);
+  color: white;
+  padding: 10px;
+  height: 0;
+  transition: height 1s;
+}
+
+.index-wrap:hover .index-des{
+  height: 80px;
+  visibility: visible;
+}
+
+/* Show */
+.show-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-img-container{
+  border: 2px solid black;
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  background-color: #d7d7d9;
+  margin-bottom: 20px;
+}
+
+.show-img{
+  object-fit: contain;
+  width: 90vw;
+  height: 50vh;
+}
+
+.show-info{
+  width: 90vw;
+}
+
+
+
+/* Footer */
+.footer-container{
+  margin-bottom: 0;
+  background: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footer-container a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-left: 1px solid white;
+  padding: 10px;
 }

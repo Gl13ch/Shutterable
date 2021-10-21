@@ -1,6 +1,22 @@
 <header>
-  <div class="header">
-    <h2 class="header-link"><a href="/photos">Home</a></h2>
-    <h2 class="header-link"><a href="/photos/new">Sell Your Pics</a></h2>
+  <div class="header-container">
+    <h2 class="header-links">
+      <span id="left">
+        <hr>
+          <a id="header-home"href="/photos">PictureThis</a>
+        <hr/>
+      </span>
+      <span id='right'>
+        <a id="header-sell" href="/photos/new">Sell Your Pics</a>
+        <% if (currentUser) { %>
+        <form id="header-logout" action="/sessions?_method=DELETE" method="POST">
+          <input type="submit" value="Log Out" />
+        </form>
+        <% } else { %>
+        <a id="header-signup" href="/users/new">Sign Up</a>
+        <a id="header-login" href="/sessions/new">Log In</a>
+      </span>
+    </h2>
+    <% } %>
   </div>
 </header>

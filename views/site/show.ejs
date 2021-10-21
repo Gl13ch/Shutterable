@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<%- include('../partials/head.ejs') %>
+  <body>
+    <%- include('../partials/header.ejs') %>
+      <div>
+        <div>
+          <img src="<%=photos.img%>" alt="<%=photos.name%>">
+        </div>
+        <div>
+          <h2><%=photos.name%></h2>
+          <h4>Price: $<%=photos.price%></h4>
+          <h4><%=photos.description %></h4>
+          <h4>Qty: <%=photos.qty%></h4>
+             <a href="/photos/<%=photos.id%>/edit">Edit</a>
+            <form action="/photos/<%=photos.id%>?_method=DELETE" method="POST">
+              <input type="submit" name="" value="DELETE">
+            </form>
+        </div>
+       </div>
+  </body>
+</html>

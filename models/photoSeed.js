@@ -1,63 +1,73 @@
 module.exports = [
   {
-    name: 'one',
+    photographer: 'one',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0006.JPG',
     price: 24.99,
     qty: 3
   }, {
-    name: 'two',
+    photographer: 'two',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0008.JPG',
-    price: 34.99,
-    qty: 0
+    price: 24.99,
+    qty: 3
   }, {
-    name: 'three',
+    photographer: 'three',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0011.JPG',
-    price: 21.99,
-    qty: 1
+    price: 24.99,
+    qty: 3
   }, {
-    name: 'four',
+    photographer: 'four',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0121.JPG',
-    price: 34.99,
-    qty: 0
+    price: 24.99,
+    qty: 3
   }, {
-    name: 'five',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0122.JPG',
-    price: 21.99,
-    qty: 1
-  }, {
-    name: 'six',
+    photographer: 'five',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0127.JPG',
-    price: 34.99,
-    qty: 0
+    price: 24.99,
+    qty: 3
   }, {
-    name: 'seven',
+    photographer: 'six',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0140.JPG',
-    price: 21.99,
-    qty: 1
+    price: 24.99,
+    qty: 3
   }, {
-    name: 'eight',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0162.JPG',
-    price: 34.99,
-    qty: 0
-  }, {
-    name: 'nine',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0174.JPG',
-    price: 21.99,
-    qty: 1
-  }, {
-    name: 'ten',
+    photographer: 'seven',
+    location: 'asdf',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0190.JPG',
-    price: 21.99,
-    qty: 1
+    price: 24.99,
+    qty: 3
+  }, {
+    photographer: 'eight',
+    location: 'asdf',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_0232.JPG',
+    price: 24.99,
+    qty: 3
+  }, {
+    photographer: 'nine',
+    location: 'asdf',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_0275.JPG',
+    price: 24.99,
+    qty: 3
+  }, {
+    photographer: 'ten',
+    location: 'asdf',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_0314.JPG',
+    price: 24.99,
+    qty: 3
   }
 ]

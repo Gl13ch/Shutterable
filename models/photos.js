@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 
 const photoSchema = new mongoose.Schema({
-  name: String,
+  photographer: {type: String, required: true},
+  location: String,
   description: String,
-  img: {type: String, default: 'public/images/unavailable-image.jpeg'},
+  img: String,
   price: {type: Number, min: 0},
-  qty: Number
+  qty: {type: Number, min: 0}
 })
 
 const Photo = mongoose.model('Photo', photoSchema)
