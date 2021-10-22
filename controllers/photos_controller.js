@@ -4,12 +4,12 @@ const seed = require('../models/photoSeed.js')
 const Photo = require('../models/photos.js')
 const photos = express.Router()
 
-//Blocks users from pages when not logged in
+// Blocks users from pages when not logged in
 const isAuthenticated = (req, res, next) => {
   if(req.session.currentUser){
     return next()
   } else {
-    res.redirect('/sessions/new')
+    res.redirect('/photos/makeaccount')
   }
 }
 
@@ -28,7 +28,7 @@ photos.delete('/:id', (req,res) => {
 })
 
 //New Route
-photos.get('/new', (req, res) => {
+photos.get('/new', isAuthenticated, (req, res) => {
   res.render(
     'photos/new.ejs',
     {currentUser: req.session.currentUser}
@@ -58,6 +58,14 @@ photos.get('/seed', (req,res) => {
     (err, data)=>{
           res.redirect('/photos');
       }
+  )
+})
+
+//In between isAuthenticated and log in/sign up Route
+photos.get('/makeaccount', (req, res) => {
+  res.render(
+    'photos/make-account.ejs',
+    {currentUser: req.session.currentUser}
   )
 })
 
