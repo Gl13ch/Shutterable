@@ -3,6 +3,12 @@
 <%- include('../partials/head.ejs') %>
   <body class="index-body">
     <%- include('../partials/header.ejs') %>
+    <div class="index-search">
+       <form action="/photos/search">
+         <input id="textfield" type="text" name="search">
+         <input id="searchfield" type="submit" value="Search">
+      </form>
+    </div>
     <div class="index-container">
       <% for (var i = 0; i < photo.length; i++) { %>
         <div class="index-wrap">

@@ -56,8 +56,8 @@ photos.get('/', (req, res) => {
 photos.get('/seed', (req,res) => {
   Photo.create(seed,
     (err, data)=>{
-          res.redirect('/photos');
-      }
+      res.redirect('/photos');
+    }
   )
 })
 
@@ -67,6 +67,22 @@ photos.get('/makeaccount', (req, res) => {
     'photos/make-account.ejs',
     {currentUser: req.session.currentUser}
   )
+})
+
+//search route
+photos.get('/search', (req, res) => {
+  //It took me a minute to figure this out. Lots of googling. Req.query contains the url parameters after the ? in the search. Therefore I can use this so something can actually be searched instead of having to hardcode a value.
+  //$or allows me to search multiple fields
+  //https://morioh.com/p/e12f7f8b356e
+  Photo.find({$or:[{photographer: req.query.search}, {location: req.query.search}, {tags: req.query.search}]}, (error, photo) => {
+    if(error){
+      console.log('error');
+    }
+    res.render('photos/search.ejs', {
+      photo: photo,
+      currentUser: req.session.currentUser
+    })
+  })
 })
 
 // Show Route
