@@ -3,15 +3,22 @@
 <%- include('../partials/head.ejs') %>
   <body>
     <%- include('../partials/header.ejs') %>
-    <h1></h1>
-    <h2></h2>
-    <hr>
-    <form action="/photos" method="POST">
-      Name: <br/><input type="text" name="name"><br/>
-      Description: <br/><textarea name="description"></textarea><br/>
+    <form class="new-form" action="/photos" method="POST">
+      Photographed By: <br> <%=currentUser.username%> <br/>
+      <input type="hidden" name="photographer" value="<%=currentUser.username%>">
+      Location: <br>
+      <input type="text" name="location"> <br>
       Image: <br/><input type="text" name="img" placeholder="ex. https://YourImageAddressHere.jpg"><br/>
+      Description: <br/><textarea name="description"></textarea><br/>
       Price: <br/><input class="number" type="number" name="price"><br/>
-      Quantity:<br/><input class="number" type="number" name="qty"><br/>
+      Select sizes that you want to sell: <br>
+      <button type="button" name="button">4 x 6</button>
+      <button type="button" name="button">5 x 7</button>
+      <button type="button" name="button">8 x 10</button>
+      <button type="button" name="button">8.5 x 11</button>
+      <button type="button" name="button">12 x 18</button>
+      <button type="button" name="button">18 x 24</button>
+      <button type="button" name="button">24 x 36</button> <br>
       <input type="submit" value="Create Photo">
     </form>
   </body>

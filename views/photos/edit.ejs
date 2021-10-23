@@ -1,17 +1,22 @@
 <!DOCTYPE html>
  <html>
-     <head>
-        <meta charset="utf-8">
-         <title></title>
-    </head>
+    <%- include('../partials/head.ejs') %>
      <body>
-         <h1>Edit</h1>
-        <form action="/photos/<%=photo.id%>?_method=PUT" method="POST">
-          Name: <br/><input type="text" name="name" value="<%=photo.name%>"><br/>
-          Description: <br/><textarea name="description"></textarea><br/>
-          Image: <br/><input type="text" name="img" placeholder="ex. https://YourImageAddressHere.jpg" value="<%=photo.img%>"><br/>
+       <%- include('../partials/header.ejs') %>
+        <img class="edit-img" src="<%=photo.img%>" alt="<%=photo.des%>">
+        <form class="edit-form" action="/photos/<%=photo.id%>?_method=PUT" method="POST">
+          Photographed By: <%=photo.photographer%><br/>
+          Description:
+          <br/><textarea class="edit-textarea" placeholder="<%=photo.description%>" name="description"><%=photo.description%></textarea><br/>
           Price: <br/><input class="number" type="number" name="price" value="<%=photo.price%>"><br/>
-          Quantity:<br/><input class="number" type="number" name="qty" value="<%=photo.qty%>"><br/>
+          Select sizes that apply: <br>
+          <button type="button" name="button">4 x 6</button>
+          <button type="button" name="button">5 x 7</button>
+          <button type="button" name="button">8 x 10</button>
+          <button type="button" name="button">8.5 x 11</button>
+          <button type="button" name="button">12 x 18</button>
+          <button type="button" name="button">18 x 24</button>
+          <button type="button" name="button">24 x 36</button> <br>
           <input type="submit" value="Submit Changes">
         </form>
    </body>

@@ -69,5 +69,19 @@ module.exports = [
     img: '/images/Photos-Proj2/DSC_0314.JPG',
     price: 24.99,
     qty: 3
+  }, {
+    photographer: 'eleven',
+    location: 'asdf',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_0356.JPG',
+    price: 24.99,
+    qty: 3
+  }, {
+    photographer: 'tweleve',
+    location: 'asdf',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_0367.JPG',
+    price: 24.99,
+    qty: 3
   }
 ]

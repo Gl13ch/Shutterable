@@ -58,10 +58,6 @@
 }
 
 /* Index */
-/* .index-body{
-  background: linear-gradient(#d7d7d9, #b9b9b9, #d7d7d9);
-} */
-
 .index-container{
   display: flex;
   flex-wrap: wrap;
@@ -125,8 +121,26 @@ a img{
   max-height: 80vh;
 }
 
-.show-info{
+.show-grid{
   width: 90vw;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  gap: 13px;
+}
+
+.show-info{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.show-buy{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+button{
+  width: 50px;
 }
 
 /* Login and Signup */
@@ -231,6 +245,30 @@ a img{
   left: 4em;
 }
 
+/* Edit */
+.edit-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  width: 40em;
+}
+
+.edit-form{
+  margin-top: 20px;
+  margin-left: 140px;
+}
+
+.edit-textarea{
+  height: 100px;
+  width: 640px;
+}
+
+/* New */
+.new-form{
+  margin-left: 30px;
+}
+
 /* Footer */
 .footer-container{
   margin-bottom: 0;
@@ -285,7 +323,7 @@ a img{
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 700px){
   .login, .signup{
     background-image: none;
   }
