@@ -2,21 +2,25 @@
 <html lang="en" dir="ltr">
 <%- include('../partials/head.ejs') %>
   <body class="index-body">
-    <%- include('../partials/header.ejs') %>
-    <div class="index-search">
-       <form action="/photos/search">
-         <input id="textfield" type="text" name="search">
-         <input id="searchfield" type="submit" value="Search">
-      </form>
-    </div>
-    <div class="index-container">
-      <% for (var i = 0; i < photo.length; i++) { %>
-        <div class="index-wrap">
-          <a class="index-img" href="/photos/<%=photo[i].id %>"><img src="<%=photo[i].img%>" alt="<%=photo[i].name%>"></a>
-          <h4 class="index-des"><%=photo[i].description%></h4>
+    <div class="page-container">
+      <div class="page-content">
+        <%- include('../partials/header.ejs') %>
+        <div class="index-search">
+          <form action="/photos/search">
+             <input id="textfield" type="text" name="search">
+             <input id="searchfield" type="submit" value="Search">
+          </form>
         </div>
-        <% } %>
+        <div class="index-container">
+          <% for (var i = 0; i < photo.length; i++) { %>
+            <div class="index-wrap">
+              <a class="index-img" href="/photos/<%=photo[i].id %>"><img src="<%=photo[i].img%>" alt="<%=photo[i].name%>"></a>
+              <h4 class="index-des"><%=photo[i].description%></h4>
+            </div>
+            <% } %>
+        </div>
+      </div>
+      <%- include('../partials/footer.ejs') %>
     </div>
-    <%- include('../partials/footer.ejs') %>
   </body>
 </html>

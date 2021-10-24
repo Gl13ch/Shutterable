@@ -40,7 +40,7 @@
   padding: 10px;
 }
 
-#header-signup{
+#header-signup, #header-cart{
   font-weight: normal;
   font-size: 18px;
   border-right: 1px solid white;
@@ -53,8 +53,18 @@
   padding: 10px;
 }
 
-#header-logout{
+.header-form{
   display: inline-block;
+}
+
+#header-logout{
+  background: none;
+  border: none;
+  padding: 10;
+  font-size: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* Index */
@@ -292,16 +302,30 @@ button{
   margin-left: 30px;
 }
 
+#new-img{
+  width: 300px;
+}
+
 /* Footer */
-.footer-container{
-  margin-bottom: 0;
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding-bottom: 70px;
+}
+
+.footer-container {
+  position: absolute;
   background: black;
   display: flex;
   justify-content: space-evenly;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 10px;
-  padding-left: 10px;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container a{

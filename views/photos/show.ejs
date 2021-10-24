@@ -9,7 +9,7 @@
         </div>
         <div class="show-grid">
         <div class="show-info">
-          <h2>Photographed By: <br> <%=photos.photographer%></h2>
+          <h3>Photographed By: <br> <%=photos.photographer%></h3>
           <h4><%=photos.description %></h4>
         </div>
         <div class="show-buy">
@@ -24,12 +24,14 @@
           <button type="button" name="button">24 x 36</button><br>
           <input type="submit" name="" value="Buy">
           <% if (currentUser) { %>
+            <% if (currentUser.username === photos.photographer) { %>
           <div>
             <a href="/photos/<%=photos.id%>/edit">Edit</a>
           </div>
           <form action="/photos/<%=photos.id%>?_method=DELETE" method="POST">
             <input type="submit" name="" value="DELETE">
           </form>
+            <% } %>
           <% } %>
         </div>
        </div>

@@ -10,8 +10,8 @@
         <a id="header-sell" href="/photos/new">Sell Your Photos</a>
         <% if (currentUser) { %>
         <a id="header-cart" href="#">Cart</a>
-        <form id="header-logout" action="/sessions?_method=DELETE" method="POST">
-          <input type="submit" value="Log Out" />
+        <form class="header-form" action="/sessions?_method=DELETE" method="POST">
+          <input id="header-logout" type="submit" value="Log Out" />
         </form>
         <% } else { %>
         <a id="header-signup" href="/users/new">Sign Up</a>
