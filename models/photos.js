@@ -4,7 +4,7 @@ const photoSchema = new mongoose.Schema({
   photographer: {type: String, required: true},
   location: String,
   description: String,
-  img: String,
+  img: {type: String, required: true},
   price: {type: Number, min: 0},
   tags: [String]
 })

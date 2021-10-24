@@ -22,7 +22,18 @@
           <button type="button" name="button">12 x 18</button>
           <button type="button" name="button">18 x 24</button>
           <button type="button" name="button">24 x 36</button><br>
-          <input type="submit" name="" value="Buy">
+          <!-- Modal -->
+          <div class="buy-btn">
+            <a href="#open-modal">Buy</a>
+          </div>
+          <div id="open-modal" class="modal">
+            <div class="modal-text">
+              <h3>
+                  Thank you for your purchase! <br>
+                  <a href="#" class="close-modal">Close</a>
+              </h3>
+            </div>
+          </div>
           <% if (currentUser) { %>
             <% if (currentUser.username === photos.photographer) { %>
           <div>
