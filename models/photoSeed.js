@@ -1,87 +1,101 @@
 module.exports = [
   {
-    photographer: 'one',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0006.JPG',
     price: 24.99,
-    tags: ['asdf', 'fdas']
+    tags: ['rat', 'cute']
   }, {
-    photographer: 'two',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0008.JPG',
     price: 24.99,
-    tags: ['asdf', 'fdas']
+    tags: ['ant', 'macro']
   }, {
-    photographer: 'three',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0011.JPG',
     price: 24.99,
-    tags: ['qwer', 'fdas']
+    tags: ['flower', 'bug', 'macro']
   }, {
-    photographer: 'four',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Minnesota',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0121.JPG',
     price: 24.99,
-    tags: ['qwer', 'fdas']
+    tags: ['flower', 'pretty']
   }, {
-    photographer: 'five',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Minnesota',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0127.JPG',
     price: 24.99,
-    tags: ['qwer', 'fdas']
+    tags: ['tulip', 'flower']
   }, {
-    photographer: 'six',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0140.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['dandelion', 'ant', 'flower']
   }, {
-    photographer: 'seven',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0190.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['dandelion', 'macro']
   }, {
-    photographer: 'eight',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Minnesota',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0232.JPG',
+    img: '/images/Photos-Proj2/DSC_0390.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['bleeding hearts', 'flower']
   }, {
-    photographer: 'nine',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0275.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['rain', 'plant']
   }, {
-    photographer: 'ten',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Minnesota',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0314.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['tugboat', 'lake']
   }, {
-    photographer: 'eleven',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0356.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['clover', 'brick']
   }, {
-    photographer: 'tweleve',
-    location: 'asdf',
+    photographer: 'KaySpin',
+    location: 'Minnesota',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: '/images/Photos-Proj2/DSC_0367.JPG',
     price: 24.99,
-    tags: ['qwer', 'zxcv']
+    tags: ['landscape', 'lake']
+  }, {
+    photographer: 'Test',
+    location: 'unknown',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmUOvofdKUdxOfLjwXsJiJYHt-yU0XFifxQ&usqp=CAU',
+    price: 24.99,
+    tags: ['silhouette', 'sunset', 'trampoline']
+  }, {
+    photographer: 'Test',
+    location: 'Unknown',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwGPF8X5lgcLBtUZUXV9kPPpfw7IuIsTq3uQ&usqp=CAU',
+    price: 24.99,
+    tags: ['butterfly', 'flower']
   }
 ]

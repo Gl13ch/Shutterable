@@ -6,7 +6,7 @@ const photoSchema = new mongoose.Schema({
   description: String,
   img: {type: String, required: true},
   price: {type: Number, min: 0},
-  tags: [String]
+  tags: Array
 })
 
 const Photo = mongoose.model('Photo', photoSchema)
