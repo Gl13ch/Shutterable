@@ -3,14 +3,14 @@ module.exports = [
     photographer: 'KaySpin',
     location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0006.JPG',
+    img: '/images/Photos-Proj2/DSC_0926.JPG',
     price: 24.99,
-    tags: ['rat', 'cute']
+    tags: ['butterfly', 'bug']
   }, {
     photographer: 'KaySpin',
     location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0008.JPG',
+    img: '/images/Photos-Proj2/DSC_0775.JPG',
     price: 24.99,
     tags: ['ant', 'macro']
   }, {
@@ -59,9 +59,9 @@ module.exports = [
     photographer: 'KaySpin',
     location: 'Texas',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/images/Photos-Proj2/DSC_0275.JPG',
+    img: '/images/Photos-Proj2/DSC_0754.JPG',
     price: 24.99,
-    tags: ['rain', 'plant']
+    tags: ['rain', 'plant', 'bug', 'ladybug']
   }, {
     photographer: 'KaySpin',
     location: 'Minnesota',
@@ -83,6 +83,41 @@ module.exports = [
     img: '/images/Photos-Proj2/DSC_0367.JPG',
     price: 24.99,
     tags: ['landscape', 'lake']
+  }, {
+    photographer: 'KaySpin',
+    location: 'Texas',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/IMG_0405.JPG',
+    price: 24.99,
+    tags: ['silhouette', 'sunset']
+  }, {
+    photographer: 'KaySpin',
+    location: 'Texas',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_1472.JPG',
+    price: 24.99,
+    tags: ['markers', 'colorful']
+  }, {
+    photographer: 'KaySpin',
+    location: 'Texas',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_1175.JPG',
+    price: 24.99,
+    tags: ['corn', 'colorful']
+  }, {
+    photographer: 'KaySpin',
+    location: 'Texas',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_1163.JPG',
+    price: 24.99,
+    tags: ['plant', 'blue', 'dragonfly']
+  }, {
+    photographer: 'KaySpin',
+    location: 'Texas',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    img: '/images/Photos-Proj2/DSC_0674.JPG',
+    price: 24.99,
+    tags: ['plant', 'flower']
   }, {
     photographer: 'Test',
     location: 'unknown',
