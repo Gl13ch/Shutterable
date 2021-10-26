@@ -7,8 +7,8 @@
 - MongoDB
 
 ## Approach Taken
-The user is able to view photography by others and "buy" it.
-A logged in user can "sell" their own photography, buy others photography, and view their profile page.
+- The user is able to view photography by others and buy it.
+- A logged in user can sell their own photography, buy others photography, and view their own profile page.
 
 ## Live-Site
 https://nameless-taiga-60874.herokuapp.com/photos
@@ -18,5 +18,6 @@ https://nameless-taiga-60874.herokuapp.com/photos
 
 ## Features to Implement
 1. The photo sizes currently have no functionality.
-2. Use input type file for images
-3. Ability to edit user's profiles
+2. Use input type file for images.
+3. Ability to edit user's profiles.
+4. Let users browse other user's profiles.

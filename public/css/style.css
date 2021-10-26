@@ -185,6 +185,24 @@ button{
   width: 50px;
 }
 
+.tags{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tag-header{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.tag-items{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
 /* Show Modal */
 .buy-btn a {
   text-decoration: none;
@@ -230,7 +248,7 @@ button{
 }
 
 .signup{
-  background-image: url(/images/Photos-Proj2/DSC_0782.JPG);
+  background-image: url(/images/Photos-Proj2/DSC_0782.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }

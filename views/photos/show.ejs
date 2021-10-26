@@ -47,9 +47,12 @@
         </div>
        </div>
        </div>
-       Tags:
-       <% for (let i = 0; i < photos.tags.length; i++) { %>
-        <h4><%=photos.tags[i]%></h4>
-      <% } %>
+       <div class="tags">
+         <hr>
+         <h4 class="tag-header" >Tags:</h4>
+         <% for (let i = 0; i < photos.tags.length; i++) { %>
+          <h4 class="tag-items"><%=photos.tags[i]%></h4>
+        <% } %>
+       </div>
   </body>
 </html>
