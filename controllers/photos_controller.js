@@ -69,6 +69,19 @@ photos.get('/makeaccount', (req, res) => {
   )
 })
 
+//Profile Page
+photos.get('/profile', (req, res, profilePhotos) => {
+  Photo.find({photographer: req.query.profile}, (error, photo) => {
+    if(error){
+      console.log('error');
+    }
+    res.render('photos/search.ejs', {
+      photo: photo,
+      currentUser: req.session.currentUser
+    })
+  })
+})
+
 //search route
 photos.get('/search', (req, res) => {
   //It took me a minute to figure this out. Lots of googling. Req.query contains the url parameters after the ? in the search. Therefore I can use this so something can actually be searched instead of having to hardcode a value.
