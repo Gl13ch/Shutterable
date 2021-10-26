@@ -5,11 +5,16 @@
     <div class="page-container">
       <div class="page-content">
         <%- include('../partials/header.ejs') %>
-        <div class="index-search">
-          <form action="/photos/search">
-             <input id="textfield" type="text" name="search">
-             <input id="searchfield" type="submit" value="Search">
-          </form>
+        <div class="profile-info">
+          <div class="profile-img-container">
+              <img class="profile-img" src="<%= currentUser.profileImg %>" alt="">
+          </div>
+          <div class="profile-bio">
+            <h2><%= currentUser.username %></h2>
+            <h3><%= currentUser.bio %></h3>
+          </div>
+        
+          <hr>
         </div>
         <div class="index-container">
           <% for (var i = 0; i < photo.length; i++) { %>

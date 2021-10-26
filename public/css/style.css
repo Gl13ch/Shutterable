@@ -224,7 +224,7 @@ button{
 
 /* Login and Signup */
 .login{
-  background-image: url(/images/Photos-Proj2/DSC_1168.JPG);
+  background-image: url(/images/Photos-Proj2/DSC_1168.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }
@@ -352,6 +352,30 @@ button{
   width: 300px;
 }
 
+/* Profile Page */
+.profile-info{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-img-container{
+  display: inline-block;
+}
+
+.profile-bio{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.profile-img{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  object-fit: contain;
+  border: 1px solid black;
+}
+
 /* Footer */
 /* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
 .page-container {
@@ -379,6 +403,7 @@ button{
   color: white;
   font-size: 18px;
   border-left: 1px solid white;
+  border-right: 1px solid white;
   padding: 10px;
 }
 

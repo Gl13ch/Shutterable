@@ -75,11 +75,31 @@ photos.get('/profile', (req, res, profilePhotos) => {
     if(error){
       console.log('error');
     }
-    res.render('photos/search.ejs', {
+    res.render('photos/profile.ejs', {
       photo: photo,
       currentUser: req.session.currentUser
     })
   })
+})
+
+// photos.get('/profile/editprofile', (req, res) => {
+//   Photo.findById(req.params.id, (err, foundUser) => {
+//     res.render(
+//       'photos/edit-profile.ejs',
+//       {
+//         user: foundUser,
+//         currentUser: req.session.currentUser
+//       }
+//     )
+//   })
+// })
+
+//Contact Us
+photos.get('/contactus', (req, res) => {
+  res.render(
+    'photos/contact.ejs',
+    {currentUser: req.session.currentUser}
+  )
 })
 
 //search route
