@@ -11,7 +11,7 @@
 - A logged in user can sell their own photography, buy others photography, and view their own profile page.
 
 ## Live-Site
-https://nameless-taiga-60874.herokuapp.com/photos
+https://shutterable.onrender.com/photos
 
 ## Known Issues
 1. When a user makes a tag it comes out as a string, not individual items in an array.
